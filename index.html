@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Mortgage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <img src="https://github.com/dougdevitre/images/blob/main/Simple_Solutions_Simple_Minds_Banner.png?raw=true" width=100% height=100%>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="calculator-container">
+            <h1>Comprehensive Mortgage Calculator</h1>
+            <form id="mortgage-form">
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" required>
+                
+                <label for="interest-rate">Interest Rate (%):</label>
+                <input type="number" step="0.01" id="interest-rate" required>
+                
+                <label for="loan-term">Loan Term (years):</label>
+                <input type="number" id="loan-term" required>
+                
+                <label for="insurance">Estimated Monthly Insurance:</label>
+                <input type="number" id="insurance" required>
+                
+                <label for="taxes">Estimated Monthly Taxes:</label>
+                <input type="number" id="taxes" required>
+                
+                <label for="hoa-fees">Monthly HOA Fees:</label>
+                <input type="number" id="hoa-fees" required>
+                
+                <label for="utilities">Estimated Monthly Utilities:</label>
+                <input type="number" id="utilities" required>
+                
+                <label for="internet">Monthly Internet Cost:</label>
+                <input type="number" id="internet" required>
+                
+                <button type="submit">Calculate</button>
+            </form>
+            <div class="result">
+                <h2>Total Monthly Payment: <span id="total-monthly-payment">$0.00</span></h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
